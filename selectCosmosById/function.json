@@ -1,0 +1,28 @@
+{
+    "bindings": [
+      {
+        "authLevel": "function",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": [
+          "get",
+          "post"
+        ]
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      },
+      {
+        "type": "cosmosDB",
+        "name": "documents",
+        "databaseName": "outDatabase",
+        "collectionName": "MyCollection",
+        "sqlQuery": "SELECT * FROM c WHERE c.cliendId={clientId}",
+        "direction": "in",
+        "connectionStringSetting": "cosmosdbskt_DOCUMENTDB"
+      }
+    ]
+  }

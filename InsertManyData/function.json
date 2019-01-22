@@ -1,0 +1,22 @@
+{
+    "bindings": [
+      {
+        "type": "cosmosDB",
+        "name": "outputDocument",
+        "databaseName": "outDatabase",
+        "collectionName": "MyCollection",
+        "createIfNotExists": true,
+        "connectionStringSetting": "cosmosdbskt_DOCUMENTDB",
+        "direction": "out"
+      },
+      {
+        "type": "eventHubTrigger",
+        "name": "myEventHubMessage",
+        "connection": "SensorsGroup_events_IOTHUB",
+        "eventHubName": "myeventhub",
+        "consumerGroup": "$Default",
+        "cardinality": "many",
+        "direction": "in"
+      }
+    ]
+  }
