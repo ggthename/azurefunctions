@@ -6,7 +6,7 @@
         "databaseName": "outDatabase",
         "collectionName": "MyCollection",
         "createIfNotExists": true,
-        "connectionStringSetting": "cosmosdbskt_DOCUMENTDB",
+        "connectionStringSetting": "cosmosskt_DOCUMENTDB",
         "direction": "out"
       },
       {
