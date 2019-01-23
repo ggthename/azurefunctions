@@ -20,7 +20,7 @@
         "name": "documents",
         "databaseName": "outDatabase",
         "collectionName": "MyCollection",
-        "sqlQuery": "SELECT * FROM c WHERE c.cliendId={clientId}",
+        "sqlQuery": "SELECT * FROM c WHERE c.clientId={clientId}",
         "direction": "in",
         "connectionStringSetting": "cosmosdbskt_DOCUMENTDB"
       }
