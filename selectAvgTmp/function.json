@@ -1,28 +1,28 @@
 {
-    "bindings": [
-      {
-        "authLevel": "function",
-        "type": "httpTrigger",
-        "direction": "in",
-        "name": "req",
-        "methods": [
-          "get",
-          "post"
-        ]
-      },
-      {
-        "type": "http",
-        "direction": "out",
-        "name": "res"
-      },
-      {
-        "type": "cosmosDB",
-        "name": "documents",
-        "databaseName": "outDatabase",
-        "collectionName": "MyCollection",
-        "sqlQuery": "SELECT AVG(c.temperature) as AVG_TEMP FROM c WHERE c.date >= udf.before({minutes})",
-        "direction": "in",
-        "connectionStringSetting": "cosmosdbskt_DOCUMENTDB"
-      }
-    ]
-  }
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "documents",
+      "databaseName": "outDatabase",
+      "collectionName": "MyCollection",
+      "sqlQuery": "SELECT AVG(c.temperature) as AVG_TEMP FROM c WHERE c.date >= udf.before({minutes})",
+      "direction": "in",
+      "connectionStringSetting": "cosmosskt_DOCUMENTDB"
+    }
+  ]
+}
