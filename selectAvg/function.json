@@ -19,7 +19,7 @@
       "type": "cosmosDB",
       "name": "documents",
       "databaseName": "outDatabase",
-      "collectionName": "MyCollection",
+      "collectionName": "MyCollection1",
       "sqlQuery": "SELECT AVG(c.temperature) as avg_temp, AVG(c.humidity) as avg_hum, AVG(illuminance) as avg_ill FROM c WHERE c.date >= udf.udfBefore({minutes})",
       "direction": "in",
       "connectionStringSetting": "cosmosskt_DOCUMENTDB"
