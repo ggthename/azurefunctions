@@ -20,7 +20,7 @@
       "name": "documents",
       "databaseName": "outDatabase",
       "collectionName": "MyCollection",
-      "sqlQuery": "SELECT AVG(c.temperature) as AVG_TEMP FROM c WHERE c.date >= udf.before({minutes})",
+      "sqlQuery": "SELECT AVG(c.temperature) as AVG_TEMP FROM c WHERE c.date >= udf.udfBefore({minutes})",
       "direction": "in",
       "connectionStringSetting": "cosmosskt_DOCUMENTDB"
     }
