@@ -5,7 +5,7 @@
       "name": "outputDocument",
       "databaseName": "outDatabase",
       "collectionName": "MyCollection1", 
-      "createIfNotExists": true,
+      "createIfNotExists": true, 
       "connectionStringSetting": "cosmosskt_DOCUMENTDB",
       "direction": "out"
     },
