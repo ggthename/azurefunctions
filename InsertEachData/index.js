@@ -3,5 +3,5 @@ module.exports = function (context, IoTHubMessages) {
     
     context.bindings.outputDocument = IoTHubMessages;
 
-    context.done();
+    context.done(); 
 };
