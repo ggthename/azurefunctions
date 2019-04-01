@@ -1,22 +1,20 @@
 {
   "bindings": [
     {
+      "name": "telemetryDocument",
       "type": "cosmosDB",
-      "name": "outputDocument",
-      "databaseName": "outDatabase",
-      "collectionName": "MyCollection1", 
-      "createIfNotExists": true, 
-      "connectionStringSetting": "cosmosskt_DOCUMENTDB",
+      "databaseName": "MyDatabase",
+      "collectionName": "DeviceTelemetry",
+      "createIfNotExists": true,
+      "connectionStringSetting": "MyAccount_COSMOSDB",     
       "direction": "out"
-    },
+  },
     {
       "type": "eventHubTrigger",
       "name": "myEventHubMessage",
-      "connection": "SensorsGroup_events_IOTHUB",
-      "eventHubName": "myeventhub",
-      "consumerGroup": "$Default",
-      "cardinality": "one",
-      "direction": "in"
+      "direction": "in",
+      "eventHubName": "MyEventHub",
+      "connection": "myEventHubReadConnectionAppSetting"
     }
   ]
 }
