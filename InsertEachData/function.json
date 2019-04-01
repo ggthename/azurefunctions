@@ -1,12 +1,12 @@
 {
   "bindings": [
     {
-      "name": "telemetryDocument",
+      "name": "outputDocument",
       "type": "cosmosDB",
-      "databaseName": "MyDatabase",
+      "databaseName": "outDatabase",
       "collectionName": "DeviceTelemetry",
       "createIfNotExists": true,
-      "connectionStringSetting": "MyAccount_COSMOSDB",     
+      "connectionStringSetting": "sktiotplatformcosmosdev_COSMOSDB",     
       "direction": "out"
   },
     {
@@ -14,7 +14,7 @@
       "name": "myEventHubMessage",
       "direction": "in",
       "eventHubName": "MyEventHub",
-      "connection": "myEventHubReadConnectionAppSetting"
+      "connection": "SktIotPlatformHubDev_events_IOTHUB"
     }
   ]
 }
