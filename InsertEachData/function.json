@@ -14,7 +14,9 @@
       "name": "myEventHubMessage",
       "direction": "in",
       "eventHubName": "MyEventHub",
-      "connection": "SktIotPlatformHubDev_events_IOTHUB"
+      "connection": "SktIotPlatformHubDev_events_IOTHUB",
+      "consumerGroup": "$Default",
+      "cardinality": "one"
     }
   ]
 }
